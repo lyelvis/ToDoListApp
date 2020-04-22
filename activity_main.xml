@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="83dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="64dp">
+
+            <Button
+                android:id="@+id/button_add_item"
+                android:layout_width="128dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_gravity="right|center_horizontal|fill"
+                android:baselineAligned="true"
+                android:text="Add Item" />
+
+            <EditText
+                android:id="@+id/new_task_view"
+                android:layout_width="193dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:hint="Enter New Task"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="64dp" >
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Delete Done" />
+        </TableRow>
+
+        <ListView
+            android:id="@+id/to_do_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
